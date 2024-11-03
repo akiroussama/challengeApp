@@ -12,7 +12,7 @@ function App() {
       <p>Hello, User!</p>
       <button onClick={() => setFeatureOn(!featureOn)}>Toggle Feature</button>
       <p>Feature is {featureOn ? 'ON' : 'OFF'}</p> 
-      <h2>ON</h2>
+      <h2>Test Results</h2>
     </div>
   );
 }
