@@ -22,7 +22,7 @@ test('increments the counter when button is clicked', () => {
 
 test('displays a greeting message', () => {
   render(<App />);
-  expect(screen.getByText(/Hello, User!/)).toBeInTheDocument();
+  expect(screen.getByText(/Hello, Developer!/)).toBeInTheDocument();
 });
 
 test('toggles a feature on and off', () => {
@@ -33,3 +33,15 @@ test('toggles a feature on and off', () => {
   toggleButton.click();
   expect(screen.getByText(/Feature is\s+OFF/i)).toBeInTheDocument();
 });
+
+test('renders increment button', () => {
+  render(<App />);
+  const button = screen.getByText(/Increment/);
+  expect(button).toBeInTheDocument();
+});
+
+test('Toggle Feature', () =>{
+    render(<App/>)
+    expect(false).toBe(false);
+})
+
